@@ -17,9 +17,10 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path
-from brainstackapp.views import insert_air_pollution_data
+from brainstackapp.views import insert_air_pollution_data,generate_air_pollution_diagram
 
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("insert-air-pollution-data/", insert_air_pollution_data, name="insert_air_pollution_data"),
+    path("generate-air-pollution-diagram/", generate_air_pollution_diagram, name="generate_air_pollution_diagram"),
 ]
